@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import './togglebtn.css'
 
 class ToggleButton extends Component {
   render() {
@@ -11,7 +12,7 @@ class ToggleButton extends Component {
           id={this.props.Name}
         />
         <label className="toggleLabel" htmlFor={this.props.Name}>
-          <span className="toggleInner"/>
+          <span className="toggleInner"/>Test
           <span className="toggleOuter"/>
         </label>
         

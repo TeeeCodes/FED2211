@@ -40,12 +40,11 @@ class App extends React.Component{
     return(
       <div className='test'>
         <ToggleButton Name='newsletter' />
-        <ToggleButton Name='daily' />
-        <ToggleButton Name='weekly' />
-        <ToggleButton Name='monthly' />
+        
       <div>
         <NextButton></NextButton>
-        <ToggleButton/>
+        
+        {/* <AddOns/> */}
         {hideComponent === 0 ? <PersonalInfo></PersonalInfo> : null}
         <NavBar></NavBar>
         {hideComponent === 1 ? <PlanBoxes></PlanBoxes> : null}

@@ -1,7 +1,9 @@
+import './addOn.css'
+
 function AddOns(){
     
     return(
-        <input type="checkbox" id="OnlineService" onClick="addOns()"></input>
+        <input type="checkbox" id="OnlineService" onClick="addOns()">CheckBox</input>
     )
 }
 
