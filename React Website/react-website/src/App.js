@@ -39,17 +39,15 @@ class App extends React.Component{
     const { hideComponent } = this.state
     return(
       <div className='test'>
-        <ToggleButton Name='newsletter' />
-        
+        {hideComponent === 1 ? <ToggleButton Name='newsletter' /> : null}
       <div>
         <NextButton></NextButton>
-        
         {/* <AddOns/> */}
         {hideComponent === 0 ? <PersonalInfo></PersonalInfo> : null}
         <NavBar></NavBar>
         {hideComponent === 1 ? <PlanBoxes></PlanBoxes> : null}
-        {hideComponent === 1 ? <AddOns /> : null}
-        <button onClick={this.test}>test</button>
+        {hideComponent === 2 ? <AddOns /> : null}
+        <button onClick={this.test}></button>
       </div>
 
       </div>
