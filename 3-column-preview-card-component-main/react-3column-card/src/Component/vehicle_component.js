@@ -1,3 +1,5 @@
+import './vehicle_component.css';
+
 function vehicleComponent(){
 
     const sedanDesc = 'Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.'
@@ -9,9 +11,21 @@ function vehicleComponent(){
 
     return(
         <div>
-            <div>
-                
+            <div className="sedanRectangle">
+                {sedanDesc}
+                <button className="sedanBtn"></button>
             </div>
+
+            <div className="suvRectangle">
+                {suvsDesc}
+                <button className="suvBtn"></button>
+            </div>
+
+            <div className="luxuryRectangle">
+                {luxuryDesc}
+                <button className="luxuryBtn"></button>
+            </div>
+
         </div>
     );
 }
