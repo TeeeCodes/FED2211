@@ -39,7 +39,7 @@ class App extends React.Component{
     const { hideComponent } = this.state
     return(
       <div className='test'>
-        {hideComponent === 1 ? <ToggleButton Name='newsletter' /> : null}
+        {hideComponent === 2 ? <ToggleButton Name='newsletter' /> : null}
       <div>
         <NextButton></NextButton>
         {/* <AddOns/> */}
