@@ -1,0 +1,61 @@
+
+/* Buttons */
+.sedanBtn{
+    box-sizing: border-box;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    left: 48px;
+    bottom: 48px;
+    margin-left: 12px;
+    color: #E28625;
+}
+
+.sedanBtn:hover{
+    background-color: #E28625;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.suvBtn{
+    box-sizing: border-box;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    left: 48px;
+    bottom: 48px;
+    margin-left: 12px;
+    color: #006971;
+}
+
+.suvBtn:hover{
+    background-color: #006971;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.luxuryBtn{
+    box-sizing: border-box;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    left: 48px;
+    bottom: 48px;
+    margin-left: 12px;
+    color: #004140;
+}
+
+.luxuryBtn:hover{
+    background-color: #004140;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 25px;
+}
