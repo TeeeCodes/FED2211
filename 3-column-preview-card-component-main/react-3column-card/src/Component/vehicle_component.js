@@ -1,29 +1,46 @@
 import './vehicle_component.css';
 
-function vehicleComponent(){
 
-    const sedanDesc = 'Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.'
+function vehicleComponent(props){
 
-    const suvsDesc = 'Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.'
+    // const descriptions = [
+    //     { name: 'SEDANS',
+    //       sedanDesc: 'Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.',
+          
+    //       button: <button></button>
+    //     },
   
-    const luxuryDesc = 'Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.'
- 
+    //     { name: 'SUVS',
+    //       suvsDesc: 'Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.',
+          
+    //       button: <button></button>
+    //     },
+  
+    //     { name: 'LUXURY',
+    //       luxuryDesc: 'Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.',
+          
+    //       button: <button></button>
+    //     }
+    // ];
 
     return(
         <div>
             <div className="sedanRectangle">
-                {sedanDesc}
-                <button className="sedanBtn"></button>
+                <img src={props.img} alt=""/>
+                <h1>{props.name}</h1>
+                <button className="sedanBtn">Learn More</button>
             </div>
 
             <div className="suvRectangle">
-                {suvsDesc}
-                <button className="suvBtn"></button>
+                <img src="react-3column-card\src\assets\icon-suvs.svg" alt=""/>
+                <h1>{props.name}</h1>
+                <button className="suvBtn">Learn More</button>
             </div>
 
             <div className="luxuryRectangle">
-                {luxuryDesc}
-                <button className="luxuryBtn"></button>
+                <img src="react-3column-card\src\assets\icon-luxury.svg" alt=""/>
+                <h1>{props.name}</h1>
+                <button className="luxuryBtn">Learn More</button>
             </div>
 
         </div>
