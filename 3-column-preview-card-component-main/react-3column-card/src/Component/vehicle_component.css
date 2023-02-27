@@ -1,36 +1,145 @@
+.mainContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+/* Boxes */
+.sedanRectangle{
+    background-color: #E28625;
+    border-radius: 0px;
+    height: 500px;
+    width: 307px;
+    border-radius: 0px;
+}
+
+.suvRectangle{
+    background-color: #006971;
+    height: 500px;
+    width: 307px;
+    border-radius: 0px;
+}
+
+.luxuryRectangle{
+    background-color: #004140;
+    height: 500px;
+    width: 307px;
+    border-radius: 0px;
+}
+
+/* Titles */
+.sedanH1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    margin-left: 48px;
+}
+
+.suvH1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    height: 48px;
+    margin-left: 48px;
+}
+
+.luxuryH1{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 48px;
+    margin-left: 48px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+/* Text */
+.sedanP{
+    font-family: 'Lexend Deca';
+    color: #FFFFFF;
+    height: 225px;
+    width: 240px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-left: 48px;
+}
+
+.suvP{
+    font-family: 'Lexend Deca';
+    color: #FFFFFF;
+    height: 225px;
+    width: 240px;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-left: 48px;
+}
+
+.luxuryP{
+    font-family: 'Lexend Deca';
+    color: #FFFFFF;
+    height: 225px;
+    width: 240px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-left: 48px;
+    mix-blend-mode: normal;
+}
 
 /* Buttons */
 .sedanBtn{
     box-sizing: border-box;
-    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    margin-left: 48px;
+    color: #E28625;
+}
+
+.suvBtn{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    margin-left: 48px;
+    color: #006971;
+}
+
+.luxuryBtn{
+    box-sizing: border-box;
     border: none;
     border-radius: 25px;
     width: 146px;
     height: 48px;
     left: 48px;
     bottom: 48px;
-    margin-left: 12px;
-    color: #E28625;
+    margin-left: 48px;
+    color: #004140;
 }
 
+/* Hover */
 .sedanBtn:hover{
     background-color: #E28625;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     border-radius: 25px;
-}
-
-.suvBtn{
-    box-sizing: border-box;
-    position: absolute;
-    border: none;
-    border-radius: 25px;
-    width: 146px;
-    height: 48px;
-    left: 48px;
-    bottom: 48px;
-    margin-left: 12px;
-    color: #006971;
 }
 
 .suvBtn:hover{
@@ -40,22 +149,29 @@
     border-radius: 25px;
 }
 
-.luxuryBtn{
-    box-sizing: border-box;
-    position: absolute;
-    border: none;
-    border-radius: 25px;
-    width: 146px;
-    height: 48px;
-    left: 48px;
-    bottom: 48px;
-    margin-left: 12px;
-    color: #004140;
-}
-
 .luxuryBtn:hover{
     background-color: #004140;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     border-radius: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+    .mainContainer {
+        height: 80vh;
+        width: 60%;
+        flex-direction: column;
+    }
+    
+    .sedanRectangle{
+        border-radius: 0px 0px 8px 8px;
+      }
+
+      .suvRectangle{
+        border-radius: 0px 0px 8px 8px;
+      }
+      
+      .luxuryRectangle{
+        border-radius: 0px 0px 8px 8px;
+      }
 }
