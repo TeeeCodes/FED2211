@@ -1,22 +1,12 @@
-import { useState, useEffect } from 'React'
 import './App.css';
-
-const URL = `https://icanhazdadjoke.com/api#authentication`
+import RandomJoke from './Components/joke_component/joke';
 
 function App() {
 
-  const [joke, setJoke] = useState
-
-  useEffect(() => {
-    const fetchJoke = async () => {
-      const result = await fetch(URL)
-    }
-    fetchJoke();
-  })
-
   return (
+
     <div className="App">
-     
+      <RandomJoke/>
     </div>
   );
 }
