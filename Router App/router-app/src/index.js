@@ -4,21 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { setupWorker } from 'msw';
-import { handlers } from './mocks/handler';
-import { BrowserRouter } from 'react-router-dom'
-
-const { worker } = require('./mocks/browser');
-worker.start();
-
-export const workerTest = setupWorker(...handlers) 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

@@ -1,19 +1,31 @@
+import React from "react";
+
+
 function JokeImg() {
 
 
+const ImgJoke = () => {
+   
 
-    fetch('https://icanhazdadjoke.com/j/<joke_id>',
-    {header:{Accept:"application/json"}})
+    fetch('https://icanhazdadjoke.com/j/R7UfaahVfFd',
+    {headers:{
+        'Accept':"application/json",
+        'Content-Type': 'application/json'
+    }
+    })
     .then((res) => res.json())
     .then((json) => console.log(json));
 
-    console.log(JokeImg)
+    // <img src="https://icanhazdadjoke.com/j/R7UfaahVfFd.png" />
+    
+}
 
 
     
     
     return (
-        <button onClick={JokeImg}></button>
+        
+        <button onClick={ImgJoke}>test</button>
     )
 }
 

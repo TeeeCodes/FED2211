@@ -1,12 +1,9 @@
 import './App.css';
-import RandomJoke from './Components/joke_component/joke';
-import SearchBar from './Components/SearchBar/search';
-import JokeImg from './Components/joke_Img/joke_Img';
+import RandomJoke from './Components/joke_component/Joke';
+import SearchBar from './Components/SearchBar/Search';
+import JokeImg from './Components/joke_Img/Joke_Img';
 
 function App() {
-  
-  fetch('https://icanhazdadjoke.com/search',
-  {header:{Accept:"application/json"}})
 
   return (
 
