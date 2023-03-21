@@ -1,8 +1,6 @@
 import './Info.css'
-import { useState } from 'react'
 
 function PersonalInfo(){
-    const [name, setName] = useState(); 
 
     return (
         <div className="MainContainer">

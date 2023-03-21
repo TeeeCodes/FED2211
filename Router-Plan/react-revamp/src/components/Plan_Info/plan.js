@@ -19,12 +19,12 @@ function PlanBoxes(props){
    
     return (
 
-
         <div className="planBox">
+            <button onClick={handleClick}>Test</button>
             <div className="arcadeBox">
-                <img id='arcadeImg' src={arcadenumb} alt=""/>
+                <img id='arcadeImg' src={arcade} alt=""/>
                 <h4 className="planH4">Arcade</h4>
-                <p className="planP">${arcade}/mo</p>
+                <p className="planP">${arcadenumb}/mo</p>
 
                     <div className="advancedBox">
                         <img id='advancedImg' src={advanced} alt=""/>
