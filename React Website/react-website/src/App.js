@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, useNavigate} from 'react-router-dom'
 
 import NavBar from './Components/NavBar/nav';
 import NextButton from './Components/Button/nxtbutton';
@@ -10,9 +10,11 @@ import ToggleButton from './Components/Monthly/togglebtn';
 import AddOns from './Components/AddOn_Components/addOn';
 
 function App() {
+  const navigate = useNavigate();
 
     return (
         
+      <div>
 
       <Routes>
         <Route path='/' element={<div><NavBar/><PersonalInfo/><NextButton/></div>}/>
@@ -20,7 +22,14 @@ function App() {
         <Route path='/Add-Ons' element={<div><NavBar/><AddOns/><ToggleButton/></div>}/>
       </Routes>
 
+      <button onClick={()=>navigate(1)}>Go Forward</button>
+      <button onClick={()=>navigate(-1)}>Go Back</button>
+      </div>
+
+      
+
     )
+    
 }
 
 export default App;

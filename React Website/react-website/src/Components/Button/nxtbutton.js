@@ -1,17 +1,13 @@
 import './nxtbutton.css'
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function NextButton(props){
-  const [count, setComponent] = useState(0);
-
-  const handleOnClick = () => {
-    setComponent(count + 1)
-  };
+  const navigate = useNavigate();
 
 return (
     <div className="nextBtn">      
-           <button type="button" onClick={handleOnClick}>
+           <button type="button" onClick={()=>{navigate('/Planning')}}>
             Test
             </button>
     </div> 
