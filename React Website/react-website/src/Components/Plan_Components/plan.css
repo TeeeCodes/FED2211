@@ -8,8 +8,8 @@
 }
 
 .arcadeBox{
-    width: 138px;
-    height: 160px;
+    width: 174px;
+    height: 210px;
     cursor: pointer;
     margin-top: 164px;
     margin-left: 390px;
@@ -18,19 +18,19 @@
 }
 
 .advancedBox{
-    width: 138px;
-    height: 160px;
-    margin-top: -164px;
-    margin-left: 160px;
+    width: 174px;
+    height: 210px;
+    margin-top: -185px;
+    margin-left: 190px;
     border-radius: 6px;
     border: 1px black solid;
 }
 
 .proBox{
-    width: 138px;
-    height: 160px;
-    margin-top: -164px;
-    margin-left: 160px;
+    width: 174px;
+    height: 210px;
+    margin-top: -185px;
+    margin-left: 190px;
     border-radius: 6px;
     border: 1px black solid;
 }
