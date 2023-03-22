@@ -1,24 +1,20 @@
-import React, { Component } from "react"
-import './togglebtn.css'
+import { useState } from 'react'
 
-class ToggleButton extends Component {
-  render() {
+export const Toggle = ({ label, toggled, onClick }) => {
+    const [isToggled, toggle] = useState(toggled)
+
+    const callback = () => {
+        toggle(!isToggled)
+        onClick(!isToggled)
+    }
+
     return (
-      <div className='toggleSwitch'>
-        <input
-          type="checkbox"
-          className="toggleBox"
-          name={this.props.Name}
-          id={this.props.Name}
-        />
-        <label className="toggleLabel" htmlFor={this.props.Name}>
-          <span className="toggleInner"/>Test
-          <span className="toggleOuter"/>
+        <label>
+            <input type="checkbox" defaultChecked={isToggled} onClick={callback} />
+            <span />
+            <strong>{label}</strong>
         </label>
-        
-      </div>
-    )
-  }
-}
 
-  export default ToggleButton
+        
+    )
+}

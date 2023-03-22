@@ -11,16 +11,16 @@ function PlanBoxes(props){
     const [advancednumb, setAdvncd] = useState(12);
     const [pronumb, setPro] = useState(15);
 
-    const handleClick = () => {
-        setArcade(90);
-        setAdvncd(120);
-        setPro(150);
-    }
-   
     return (
 
         <div className="planBox">
-            <button onClick={handleClick}>Test</button>
+           
+            <button onClick={()=>{
+                setArcade(arcadenumb === 9 ? 90 : 9)
+                setAdvncd(advancednumb === 12 ? 120 : 12)
+                setPro(pronumb === 15 ? 150 : 15)
+            }}>Test</button>
+            
             <div className="arcadeBox">
                 <img id='arcadeImg' src={arcade} alt=""/>
                 <h4 className="planH4">Arcade</h4>
