@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 
-export const Toggle = ({ label, toggled, onClick }) => {
+export const Toggle = ({label, toggled, onClick}) => {
     const [isToggled, toggle] = useState(toggled)
 
     const callback = () => {
@@ -10,11 +10,10 @@ export const Toggle = ({ label, toggled, onClick }) => {
 
     return (
         <label>
-            <input type="checkbox" defaultChecked={isToggled} onClick={callback} />
-            <span />
+            <input type="checkbox" defaultChecked={isToggled} onClick={callback}/>
+            <span/>
             <strong>{label}</strong>
         </label>
 
-        
     )
 }
